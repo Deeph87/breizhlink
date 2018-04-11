@@ -1,0 +1,13 @@
+version: '3.5'
+
+services:
+    db:
+        container_name: breizhlinkMySQL
+        image: mysql:5.7.21
+        environment:
+            MYSQL_ROOT_PASSWORD: root
+            MYSQL_DATABASE: breizhlink
+            MYSQL_USER: jhaudry
+            MYSQL_PASSWORD: jhaudry
+        ports:
+            - 3307:3306
