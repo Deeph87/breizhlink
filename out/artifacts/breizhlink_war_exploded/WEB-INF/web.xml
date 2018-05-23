@@ -2,16 +2,45 @@
 <web-app>
     <display-name>Breizhlink</display-name>
     <error-page>
-    <error-code>404</error-code>
-    <location>/error</location>
+        <error-code>404</error-code>
+        <location>/error</location>
     </error-page>
+    <!--Home-->
     <servlet>
-    <servlet-name>Home</servlet-name>
-    <servlet-class>servlets.Home</servlet-class>
+        <servlet-name>Home</servlet-name>
+        <servlet-class>servlets.Home</servlet-class>
+        <load-on-startup>0</load-on-startup>
     </servlet>
+    <!--Urls-->
+    <servlet>
+        <servlet-name>Urls</servlet-name>
+        <servlet-class>servlets.Urls</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <!--Redirect-->
+    <servlet>
+        <servlet-name>Redirect</servlet-name>
+        <servlet-class>servlets.Redirect</servlet-class>
+        <load-on-startup>2</load-on-startup>
+    </servlet>
+    <!--Home-->
     <servlet-mapping>
-    <servlet-name>Home</servlet-name>
-    <url-pattern></url-pattern>
+        <servlet-name>Home</servlet-name>
+        <url-pattern></url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Home</servlet-name>
+        <url-pattern>/home</url-pattern>
+    </servlet-mapping>
+    <!--Urls-->
+    <servlet-mapping>
+        <servlet-name>Urls</servlet-name>
+        <url-pattern>/shorten</url-pattern>
+    </servlet-mapping>
+    <!--Redirect-->
+    <servlet-mapping>
+        <servlet-name>Redirect</servlet-name>
+        <url-pattern>/s/*</url-pattern>
     </servlet-mapping>
     <context-param>
         <param-name>port</param-name>
