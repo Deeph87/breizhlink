@@ -1,6 +1,6 @@
 package beans;
 
-public class Urls {
+public class SimpleUrls {
 
     private int id;
 
@@ -8,7 +8,7 @@ public class Urls {
 
     private String generatedUrl;
 
-    Urls ()
+    public SimpleUrls()
     {}
 
     public int getId() {

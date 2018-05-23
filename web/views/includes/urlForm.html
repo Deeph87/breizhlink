@@ -1,0 +1,18 @@
+<h1>Raccourcir une URL :</h1><br/>
+<form action="/shorten" method="post">
+    <div class="input-field">
+        <input placeholder="Entrez votre URL &agrave raccourcir" id="url" type="text" name="originUrl">
+        <label for="url">URL</label>
+    </div>
+    <div class="input-field">
+        <p>
+            <label>
+                <input type="checkbox" name="passwordSecure" value="true">
+                <span>S&eacutecuriser avec mot de passe</span>
+            </label>
+        </p>
+    </div>
+    <div class="input-field">
+        <input class="btn" type="submit" value="Raccourcir">
+    </div>
+</form>
