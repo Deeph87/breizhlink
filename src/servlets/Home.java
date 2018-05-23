@@ -1,6 +1,7 @@
 package servlets;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -34,7 +35,7 @@ public class Home extends HttpServlet {
 
         out.println("<body>");
 
-        out.println("<p>Hello world</p>");
+        out.println("<p>test world</p>");
 
         out.println("</body>");
 
