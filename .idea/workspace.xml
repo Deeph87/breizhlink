@@ -7,37 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc281447-de33-4557-b7a1-f592a8000ce9" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/beans/ComplexUrls.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/beans/DAOConnector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/beans/DAOSimpleUrls.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/DB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/URLShortener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/Urls.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/servlets/Redirect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/servlets/Urls.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/commons-validator-1.6.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/views/includes/css.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/views/includes/js.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/views/includes/navbar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/views/includes/urlForm.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/views/layouts/main1.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/views/pages/shorten.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/jsp_api.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/jsp_api.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/breizhlink.iml" beforeDir="false" afterPath="$PROJECT_DIR$/breizhlink.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/breizhlink_war_exploded/WEB-INF/classes/beans/Urls.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/breizhlink_war_exploded/WEB-INF/classes/servlets/Home.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/breizhlink_war_exploded/WEB-INF/classes/servlets/Home.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/breizhlink_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/breizhlink_war_exploded/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/breizhlink_war_exploded/public/imgs/zarco.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/breizhlink_war_exploded/views/hello/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/breizhlink/beans/Urls.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/breizhlink/servlets/Home.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/breizhlink/servlets/Home.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/beans/Urls.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/beans/SimpleUrls.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlets/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servlets/Home.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/public/imgs/zarco.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/views/hello/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/views/pages/home.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,19 +20,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="30" column="21" lean-forward="true" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Redirect.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Redirect.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/servlets/Redirect.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
+            <state relative-caret-position="500">
               <caret line="20" column="78" selection-start-line="20" selection-start-column="78" selection-end-line="20" selection-end-column="78" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -70,11 +32,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Urls.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/servlets/Urls.java">
+      <file leaf-file-name="DAOConnector.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/beans/DAOConnector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="46" column="49" lean-forward="true" selection-start-line="44" selection-start-column="8" selection-end-line="46" selection-end-column="49" />
+            <state relative-caret-position="775">
+              <caret line="34" column="33" lean-forward="true" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -82,10 +44,28 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Urls.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/services/Urls.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Urls.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/servlets/Urls.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-273">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="DAOSimpleUrls.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/beans/DAOSimpleUrls.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-607">
+            <state relative-caret-position="-857">
               <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -94,41 +74,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Home.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/servlets/Home.java">
+      <file leaf-file-name="SimpleUrls.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/beans/SimpleUrls.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="25" column="100" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="100" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="425">
+              <caret line="22" column="30" lean-forward="true" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/views/pages/home.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="shorten.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/views/pages/shorten.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="93">
-              <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+              <caret line="3" column="16" lean-forward="true" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DB.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/services/DB.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Home.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/servlets/Home.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="12" column="122" selection-start-line="12" selection-start-column="122" selection-end-line="12" selection-end-column="122" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -136,20 +116,11 @@
       <file leaf-file-name="URLShortener.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/services/URLShortener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-614">
+            <state relative-caret-position="806">
               <caret line="96" column="32" selection-start-line="96" selection-start-column="32" selection-end-line="96" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urlForm.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/views/includes/urlForm.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -200,15 +171,15 @@
         <option value="$PROJECT_DIR$/src/beans/SimpleUrls.java" />
         <option value="$PROJECT_DIR$/src/services/DB.java" />
         <option value="$PROJECT_DIR$/src/beans/DAOConnector.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/servlets/Home.java" />
         <option value="$PROJECT_DIR$/web/views/pages/home.jsp" />
         <option value="$PROJECT_DIR$/web/views/pages/shorten.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/services/URLShortener.java" />
-        <option value="$PROJECT_DIR$/src/servlets/Urls.java" />
         <option value="$PROJECT_DIR$/src/beans/DAOSimpleUrls.java" />
         <option value="$PROJECT_DIR$/src/servlets/Redirect.java" />
+        <option value="$PROJECT_DIR$/src/servlets/Home.java" />
+        <option value="$PROJECT_DIR$/src/servlets/Urls.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -292,27 +263,6 @@
               <item name="breizhlink" type="b2602c69:ProjectViewProjectNode" />
               <item name="breizhlink" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="includes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="breizhlink" type="b2602c69:ProjectViewProjectNode" />
-              <item name="breizhlink" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="breizhlink" type="b2602c69:ProjectViewProjectNode" />
-              <item name="breizhlink" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="breizhlink" type="b2602c69:ProjectViewProjectNode" />
-              <item name="breizhlink" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -349,17 +299,17 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/web/WEB-INF/lib" />
-      <recent name="$PROJECT_DIR$/web/views/pages" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="beans" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/web/views/includes" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/web" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="beans" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/WEB-INF/lib" />
+      <recent name="$PROJECT_DIR$/web/views/pages" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -509,19 +459,19 @@
       <workItem from="1523487067033" duration="277000" />
       <workItem from="1523802487729" duration="10282000" />
       <workItem from="1526990372362" duration="12874000" />
-      <workItem from="1527055749441" duration="5462000" />
+      <workItem from="1527055749441" duration="6349000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40686000" />
+    <option name="totallyTimeSpent" value="41573000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="969" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50061053" side_tool="true" weight="0.36395758" />
+      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.501221" side_tool="true" weight="0.36395758" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32902467" />
       <window_info anchor="right" id="Maven Projects" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
@@ -539,9 +489,9 @@
       <window_info anchor="bottom" id="Java Enterprise" order="10" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.45229682" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4993895" weight="0.36395758" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26800978" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.45229682" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.498779" visible="true" weight="0.36395758" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26800978" />
       <window_info id="Web" order="6" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="5" side_tool="true" />
@@ -766,42 +716,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/beans/ComplexUrls.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
-          <folding>
-            <element signature="e#327#328#0" expanded="true" />
-            <element signature="e#360#361#0" expanded="true" />
-            <element signature="e#388#389#0" expanded="true" />
-            <element signature="e#417#418#0" expanded="true" />
-            <element signature="e#445#446#0" expanded="true" />
-            <element signature="e#484#485#0" expanded="true" />
-            <element signature="e#518#519#0" expanded="true" />
-            <element signature="e#552#553#0" expanded="true" />
-            <element signature="e#582#583#0" expanded="true" />
-            <element signature="e#629#630#0" expanded="true" />
-            <element signature="e#667#668#0" expanded="true" />
-            <element signature="e#699#700#0" expanded="true" />
-            <element signature="e#729#730#0" expanded="true" />
-            <element signature="e#773#774#0" expanded="true" />
-            <element signature="e#811#812#0" expanded="true" />
-            <element signature="e#845#846#0" expanded="true" />
-            <element signature="e#877#878#0" expanded="true" />
-            <element signature="e#925#926#0" expanded="true" />
-            <element signature="e#967#968#0" expanded="true" />
-            <element signature="e#999#1000#0" expanded="true" />
-            <element signature="e#1029#1030#0" expanded="true" />
-            <element signature="e#1073#1074#0" expanded="true" />
-            <element signature="e#1111#1112#0" expanded="true" />
-            <element signature="e#1143#1144#0" expanded="true" />
-            <element signature="e#1171#1172#0" expanded="true" />
-            <element signature="e#1213#1214#0" expanded="true" />
-            <element signature="e#1247#1248#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mcd.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -860,64 +774,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/services/DB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/beans/SimpleUrls.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="22" column="30" lean-forward="true" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
-          <folding>
-            <element signature="e#182#183#0" expanded="true" />
-            <element signature="e#207#208#0" expanded="true" />
-            <element signature="e#240#241#0" expanded="true" />
-            <element signature="e#268#269#0" expanded="true" />
-            <element signature="e#309#310#0" expanded="true" />
-            <element signature="e#346#347#0" expanded="true" />
-            <element signature="e#406#407#0" expanded="true" />
-            <element signature="e#458#459#0" expanded="true" />
-            <element signature="e#497#498#0" expanded="true" />
-            <element signature="e#532#533#0" expanded="true" />
-            <element signature="e#588#589#0" expanded="true" />
-            <element signature="e#636#637#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/beans/DAOConnector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="34" column="33" lean-forward="true" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#563#564#0" expanded="true" />
-            <element signature="e#594#595#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/services/Urls.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/views/layouts/main1.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="53" selection-start-column="53" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -949,9 +809,86 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/beans/ComplexUrls.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+          <folding>
+            <element signature="e#327#328#0" expanded="true" />
+            <element signature="e#360#361#0" expanded="true" />
+            <element signature="e#388#389#0" expanded="true" />
+            <element signature="e#417#418#0" expanded="true" />
+            <element signature="e#445#446#0" expanded="true" />
+            <element signature="e#484#485#0" expanded="true" />
+            <element signature="e#518#519#0" expanded="true" />
+            <element signature="e#552#553#0" expanded="true" />
+            <element signature="e#582#583#0" expanded="true" />
+            <element signature="e#629#630#0" expanded="true" />
+            <element signature="e#667#668#0" expanded="true" />
+            <element signature="e#699#700#0" expanded="true" />
+            <element signature="e#729#730#0" expanded="true" />
+            <element signature="e#773#774#0" expanded="true" />
+            <element signature="e#811#812#0" expanded="true" />
+            <element signature="e#845#846#0" expanded="true" />
+            <element signature="e#877#878#0" expanded="true" />
+            <element signature="e#925#926#0" expanded="true" />
+            <element signature="e#967#968#0" expanded="true" />
+            <element signature="e#999#1000#0" expanded="true" />
+            <element signature="e#1029#1030#0" expanded="true" />
+            <element signature="e#1073#1074#0" expanded="true" />
+            <element signature="e#1111#1112#0" expanded="true" />
+            <element signature="e#1143#1144#0" expanded="true" />
+            <element signature="e#1171#1172#0" expanded="true" />
+            <element signature="e#1213#1214#0" expanded="true" />
+            <element signature="e#1247#1248#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/beans/DAOSimpleUrls.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-857">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/beans/SimpleUrls.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="22" column="30" lean-forward="true" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/DB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/beans/DAOConnector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="775">
+          <caret line="34" column="33" lean-forward="true" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/Urls.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/services/URLShortener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-614">
+        <state relative-caret-position="806">
           <caret line="96" column="32" selection-start-line="96" selection-start-column="32" selection-end-line="96" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -961,28 +898,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/servlets/Home.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="25" column="100" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="100" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/servlets/Urls.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="46" column="49" lean-forward="true" selection-start-line="44" selection-start-column="8" selection-end-line="46" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/beans/DAOSimpleUrls.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-607">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="168">
+          <caret line="12" column="122" selection-start-line="12" selection-start-column="122" selection-end-line="12" selection-end-column="122" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -991,11 +908,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/servlets/Redirect.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
+        <state relative-caret-position="500">
           <caret line="20" column="78" selection-start-line="20" selection-start-column="78" selection-end-line="20" selection-end-column="78" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/servlets/Urls.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-273">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="16" lean-forward="true" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
         </state>
       </provider>
     </entry>
