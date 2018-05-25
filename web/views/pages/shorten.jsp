@@ -1,22 +1,29 @@
-<%@ page import="java.util.Arrays" %>
-<%@ page import="java.util.Collection" %>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Breizhlink - Shorten</title>
-    <%@include file='../includes/css.html'%>
-</head>
-<body>
-<%@include file='../includes/navbar.html'%>
-<div class="row">
-    <div class="col s6 push-s3">
-        <h1>Votre URL Raccourcie :</h1><br/>
-        <p><%= request.getAttribute("shortenUrl") %></p>
+<%@page contentType="text/html" pageEncoding="UTF-8" %>
+<%@include file='../layouts/main-start-dom-1.jsp' %>
+<%@include file='../includes/navbar.html' %>
+<div class="container">
+    <h1>Votre URL Raccourcie :</h1><br/>
+    <%--<p><%= request.getAttribute("shortenUrl") %></p>--%>
+    <div class="input-group">
+        <input type="text" value="<%= request.getAttribute("shortenUrl") %>" class="form-control" id="urlShortened">
+        <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="button" onclick="copyToClipboard()">
+                <span class="oi oi-clipboard"></span>
+            </button>
+        </div>
     </div>
 </div>
-<%@include file='../includes/js.html'%>
-</body>
-</html>
+<%@include file='../includes/js.html' %>
+<script>
+    function copyToClipboard() {
+        /* Get the text field */
+        var copyText = document.getElementById("urlShortened");
+
+        /* Select the text field */
+        copyText.select();
+
+        /* Copy the text inside the text field */
+        document.execCommand("copy");
+    }
+</script>
+<%@include file='../layouts/main-end-dom-1.jsp' %>

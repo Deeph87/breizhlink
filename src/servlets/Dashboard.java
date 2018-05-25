@@ -10,7 +10,7 @@ import java.io.IOException;
 @WebServlet("/dashboard")
 public class Dashboard extends HttpServlet{
 
-    public static final String VUE = "/dashboard.jsp";
+    public static final String VUE = "/views/pages/dashboard.jsp";
 
     /**
      * @see HttpServlet#HttpServlet()
