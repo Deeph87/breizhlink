@@ -1,9 +1,9 @@
-package beans;
+package DAO;
 
 import services.DB;
 import java.sql.Connection;
 
-public class DAOConnector {
+public class Connector {
 
     private Connection connector;
     private DB db;
@@ -12,7 +12,7 @@ public class DAOConnector {
     private String dbUsername;
     private String dbPassword;
 
-    public DAOConnector(){
+    public Connector(){
         this.dbName = "breizhlink";
         this.dbPort = "3307";
         this.dbUsername = "jhaudry";

@@ -1,10 +1,13 @@
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
 <%@include file='../layouts/main-start-dom-1.jsp' %>
-<%@include file='../includes/navbar.html' %>
+<%@include file='../includes/navbar.jsp' %>
 <div class="container">
-    <h1>Raccourcir une URL :</h1><br/>
+    <h1 class="mt-5">Raccourcir une URL :</h1><br/>
     <% if (request.getAttribute("error") != null) { %>
         <div class="alert alert-danger" role="alert"><%= request.getAttribute("error") %></div>
+    <% } %>
+    <% if (request.getAttribute("success") != null) { %>
+    <div class="alert alert-success" role="alert"><%= request.getAttribute("success") %></div>
     <% } %>
     <form action="/shorten" method="post">
         <div class="form-group" id="urlFieldContainer">

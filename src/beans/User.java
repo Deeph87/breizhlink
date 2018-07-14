@@ -1,10 +1,8 @@
 package beans;
 
-public class Users {
+public class User {
 
     private int id;
-
-    private String login;
 
     private String email;
 
@@ -12,10 +10,10 @@ public class Users {
 
     private Boolean enabled;
 
-    private int type_id;
+    private String typeId;
 
     //constructeur
-    Users()
+    public User()
     {}
 
     public int getId() {
@@ -24,14 +22,6 @@ public class Users {
 
     public void setId(int id) {
         this.id = id;
-    }
-
-    public String getLogin() {
-        return login;
-    }
-
-    public void setLogin(String login) {
-        this.login = login;
     }
 
     public String getEmail() {
@@ -58,12 +48,11 @@ public class Users {
         this.enabled = enabled;
     }
 
-    public int getType_id() {
-        return type_id;
+    public String getTypeId() {
+        return typeId;
     }
 
-    public void setType_id(int type_id) {
-        this.type_id = type_id;
+    public void setTypeId(String typeId) {
+        this.typeId = typeId;
     }
-
 }
