@@ -56,8 +56,6 @@ public class Users extends Connector {
 
             this.closeConnection();
 
-            System.out.println(userFound);
-
             if (userFound != null) {
                 ret = true;
             }

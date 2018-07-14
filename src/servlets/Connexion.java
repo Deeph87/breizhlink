@@ -84,6 +84,7 @@ public class Connexion extends HttpServlet {
             HttpSession session = request.getSession();
 
             session.setAttribute("userEmail", user.getEmail());
+            session.setAttribute("userId", user.getId());
 
             response.sendRedirect("/home");
 

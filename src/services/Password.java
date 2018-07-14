@@ -11,12 +11,15 @@ public class Password {
     }
 
     public String encrypt() {
-        String passwordEncrypted = "";
-        try {
-            MessageDigest messageDigest = MessageDigest.getInstance("SHA-1");
-            messageDigest.update(this.password.getBytes());
-            passwordEncrypted = new String(messageDigest.digest());
-        } catch (Exception exception) {}
+        String passwordEncrypted = this.password;
+//        String passwordEncrypted = "";
+//        try {
+//            MessageDigest messageDigest = MessageDigest.getInstance("MD5");
+//            messageDigest.update(this.password.getBytes());
+//            passwordEncrypted = new String(messageDigest.digest());
+//        } catch (Exception exception) {}
+
+
 
         return passwordEncrypted;
     }

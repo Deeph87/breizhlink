@@ -4,12 +4,15 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 import DAO.SimpleUrls;
 import DAO.UrlsPasswords;
+import beans.Statistics;
 import beans.URLSPasswords;
 import org.apache.commons.validator.routines.UrlValidator;
+import services.Password;
 import services.URLShortener;
 
 import java.security.MessageDigest;
@@ -49,16 +52,23 @@ public class Urls extends HttpServlet {
         simpleUrls.setDestinationUrl(originUrl);
         simpleUrls.setGeneratedUrl(generatedUrl);
 
+        HttpSession session = request.getSession(false);
+
+        if(session.getAttribute("userId") != null){
+            int userId = (Integer) session.getAttribute("userId");
+            simpleUrls.setUserId(userId);
+        } else {
+            simpleUrls.setUserId(-1);
+        }
+
         SimpleUrls DAOSimpleUrls = new SimpleUrls(simpleUrls);
         DAOSimpleUrls.save();
 
         if (!password.isEmpty()) {
-            String securePassword = "";
-            try {
-                MessageDigest messageDigest = MessageDigest.getInstance("SHA-1");
-                messageDigest.update(password.getBytes());
-                securePassword = new String(messageDigest.digest());
-            } catch (Exception exception) {
+            Password passwordService = new Password(password);
+            String securePassword = passwordService.encrypt();
+
+            if(securePassword.isEmpty()){
                 error = "Encryption failed !";
                 request.setAttribute("error", error);
                 getServletContext().getRequestDispatcher("/home").forward(request, response);

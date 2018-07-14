@@ -1,6 +1,8 @@
 package DAO;
 
+import beans.SimpleUrls;
 import beans.URLSPasswords;
+import services.Password;
 
 import java.sql.*;
 
@@ -33,5 +35,35 @@ public class UrlsPasswords extends Connector {
         } catch (Exception exception) {
             exception.printStackTrace();
         }
+    }
+
+    public boolean canAccessToUrl(String Id) {
+        boolean ret = false;
+
+        Password passwordService = new Password(this.urlsPasswords.getPassword());
+        String encryptedPassword = passwordService.encrypt();
+
+        try {
+            Connection connection = this.getConnection();
+
+            String query = "SELECT * FROM urls_passwords WHERE url_id = '" + Id + "'";
+
+            PreparedStatement stmt = connection.prepareStatement(query);
+
+            ResultSet resultSet = stmt.executeQuery();
+
+            this.closeConnection();
+
+            if(resultSet.next()) {
+                if(resultSet.getString("password").equals(encryptedPassword)){
+                    ret = true;
+                }
+            }
+
+        } catch (Exception exception) {
+            exception.printStackTrace();
+        }
+
+        return ret;
     }
 }

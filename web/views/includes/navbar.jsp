@@ -10,6 +10,11 @@
             <li class="nav-item active">
                 <a class="nav-link" href="/home">Home</a>
             </li>
+            <c:if test="${!empty sessionScope.userEmail}">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/my-urls">Mes URLs</a>
+                </li>
+            </c:if>
         </ul>
     </div>
     <ul class="nav justify-content-end">
