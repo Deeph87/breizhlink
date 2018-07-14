@@ -1,12 +1,12 @@
 package beans;
 
-public class UserTypes {
+public class UserType {
 
     private int id;
 
     private String name;
 
-    UserTypes()
+    public UserType()
     {}
 
     public int getId() {

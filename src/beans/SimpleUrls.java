@@ -8,6 +8,8 @@ public class SimpleUrls {
 
     private String generatedUrl;
 
+    private int userId;
+
     public SimpleUrls()
     {}
 
@@ -33,5 +35,13 @@ public class SimpleUrls {
 
     public void setGeneratedUrl(String generatedUrl) {
         this.generatedUrl = generatedUrl;
+    }
+
+    public int getUserId() {
+        return userId;
+    }
+
+    public void setUserId(int userId) {
+        this.userId = userId;
     }
 }

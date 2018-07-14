@@ -1,6 +1,6 @@
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
 <%@include file='../layouts/main-start-dom-1.jsp' %>
-<%@include file='../includes/navbar.html' %>
+<%@include file='../includes/navbar.jsp' %>
 <div class="container">
     <h1>Votre URL Raccourcie :</h1><br/>
     <%--<p><%= request.getAttribute("shortenUrl") %></p>--%>
