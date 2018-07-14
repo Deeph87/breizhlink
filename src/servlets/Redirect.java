@@ -1,7 +1,6 @@
 package servlets;
 
-import beans.DAOSimpleUrls;
-import beans.SimpleUrls;
+import DAO.SimpleUrls;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -13,10 +12,10 @@ public class Redirect extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String generatedURL = request.getRequestURL().toString();
 
-        SimpleUrls simpleUrls = new SimpleUrls();
+        beans.SimpleUrls simpleUrls = new beans.SimpleUrls();
         simpleUrls.setGeneratedUrl(generatedURL);
 
-        DAOSimpleUrls DAOSimpleUrls = new DAOSimpleUrls(simpleUrls);
+        SimpleUrls DAOSimpleUrls = new SimpleUrls(simpleUrls);
 
         String destinationUrl = DAOSimpleUrls.getDestinationUrlByGeneratedUrl();
         response.sendRedirect(destinationUrl);

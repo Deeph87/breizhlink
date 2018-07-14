@@ -1,19 +1,22 @@
-package beans;
+package DAO;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-public class DAOSimpleUrls extends DAOConnector {
+public class SimpleUrls extends Connector {
 
-    private SimpleUrls simpleUrls;
+    private beans.SimpleUrls simpleUrls;
+    private int generatedId;
 
-    public DAOSimpleUrls(SimpleUrls simpleUrls) {
+    public SimpleUrls(beans.SimpleUrls simpleUrls) {
         super();
         this.simpleUrls = simpleUrls;
     }
 
     public void save() {
+        String[] returnId = { "ID" };
+
         try {
             Connection connection = this.getConnection();
 
@@ -21,12 +24,19 @@ public class DAOSimpleUrls extends DAOConnector {
                     + "(destination_url, generated_urls) VALUES"
                     + "(?,?)";
 
-            PreparedStatement stmt = connection.prepareStatement(query);
+            PreparedStatement stmt = connection.prepareStatement(query, returnId);
 
             stmt.setString(1, this.simpleUrls.getDestinationUrl());
             stmt.setString(2, this.simpleUrls.getGeneratedUrl());
 
             stmt.executeUpdate();
+
+            try (ResultSet rs = stmt.getGeneratedKeys()) {
+                if(rs.next()) {
+                    this.generatedId = rs.getInt(1);
+                }
+            }
+
             this.closeConnection();
 
         } catch (Exception exception) {
@@ -55,5 +65,9 @@ public class DAOSimpleUrls extends DAOConnector {
             exception.printStackTrace();
         }
         return ret;
+    }
+
+    public int getGeneratedKey() {
+        return this.generatedId;
     }
 }

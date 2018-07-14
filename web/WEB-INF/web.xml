@@ -23,6 +23,17 @@
         <servlet-class>servlets.Redirect</servlet-class>
         <load-on-startup>2</load-on-startup>
     </servlet>
+    <!--Inscription-->
+    <servlet>
+        <servlet-name>Inscription</servlet-name>
+        <servlet-class>servlets.Inscription</servlet-class>
+        <load-on-startup>3</load-on-startup>
+    </servlet>
+    <servlet>
+        <servlet-name>Connexion</servlet-name>
+        <servlet-class>servlets.Connexion</servlet-class>
+        <load-on-startup>4</load-on-startup>
+    </servlet>
     <!--Home-->
     <servlet-mapping>
         <servlet-name>Home</servlet-name>
@@ -36,6 +47,15 @@
     <servlet-mapping>
         <servlet-name>Urls</servlet-name>
         <url-pattern>/shorten</url-pattern>
+    </servlet-mapping>
+    <!--Inscription-->
+    <servlet-mapping>
+        <servlet-name>Inscription</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Connexion</servlet-name>
+        <url-pattern>/login</url-pattern>
     </servlet-mapping>
     <!--Redirect-->
     <servlet-mapping>
