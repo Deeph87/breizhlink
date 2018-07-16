@@ -9,11 +9,17 @@
     <% if (request.getAttribute("success") != null) { %>
     <div class="alert alert-success" role="alert"><%= request.getAttribute("success") %></div>
     <% } %>
-    <form action="/shorten" method="post">
+    <form action="/shorten" method="post" id="formUrl">
         <div class="form-group" id="urlFieldContainer">
             <label for="url">URL</label>
             <input placeholder="Entrez votre URL &agrave raccourcir" class="form-control" id="url" type="text" name="originUrl">
         </div>
+        <c:if test="${!empty sessionScope.userEmail}">
+            <div class="form-group" id="validityContainer">
+                <label for="validity">Ajouter une durée de validité</label>
+                <input type="text" name="validity" class="form-control" id="validity" placeholder="Entrez une duree en minute">
+            </div>
+        </c:if>
         <div class="form-check" id="passwordCheckboxContainer">
             <input type="checkbox" name="hasPasswordSecure" class="form-check-input" id="hasPassword" value="1">
             <label class="form-check-label" for="hasPassword">S&eacutecuriser avec mot de passe</label>
@@ -24,7 +30,6 @@
 <%@include file='../includes/js.html' %>
 <script>
     $(document).ready(function(){
-        var urlFieldContainer = $("#urlFieldContainer");
         var passwordCheckboxContainer = $("#passwordCheckboxContainer");
         var passwordCheckboxInput = $("#passwordCheckboxContainer #hasPassword");
         var isPasswdSecurURL = false;
@@ -57,7 +62,7 @@
         function conditionToDisplayThePasswordField(isPasswdSecurURL)
         {
             if(isPasswdSecurURL){
-                urlFieldContainer.after(getPasswordField());
+                passwordCheckboxContainer.before(getPasswordField());
             } else {
                 $("#passwordContainer").remove();
             }

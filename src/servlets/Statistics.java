@@ -32,9 +32,6 @@ public class Statistics extends HttpServlet {
         ArrayList days = mapStats.get("days");
         ArrayList visites = mapStats.get("visites");
 
-        System.out.println(this.arrayListToString(days));
-        System.out.println(this.arrayListToString(visites));
-
         request.setAttribute("days", this.arrayListToString(days));
         request.setAttribute("visites", this.arrayListToString(visites));
 

@@ -1,6 +1,6 @@
 package beans;
 
-import java.util.Date;
+import java.sql.Date;
 
 public class ComplexUrls {
 
@@ -10,7 +10,7 @@ public class ComplexUrls {
 
     private boolean captcha;
 
-    private Date maxDate;
+    private long maxDate;
 
     private Date startDate;
 
@@ -18,7 +18,7 @@ public class ComplexUrls {
 
     private String email;
 
-    ComplexUrls()
+    public ComplexUrls()
     {}
 
     public int getId() {
@@ -45,11 +45,11 @@ public class ComplexUrls {
         this.captcha = captcha;
     }
 
-    public Date getMaxDate() {
+    public long getMaxDate() {
         return maxDate;
     }
 
-    public void setMaxDate(Date maxDate) {
+    public void setMaxDate(long maxDate) {
         this.maxDate = maxDate;
     }
 
