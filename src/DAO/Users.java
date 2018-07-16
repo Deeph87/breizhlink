@@ -56,8 +56,11 @@ public class Users extends Connector {
 
             this.closeConnection();
 
-            if (userFound != null) {
-                ret = true;
+            if (userFound.next()) {
+                if(userFound.getString("email") != null){
+                    ret = true;
+                    this.User.setId(userFound.getInt("id"));
+                }
             }
         } catch (Exception exception) {
             exception.printStackTrace();
